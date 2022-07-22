@@ -1,0 +1,2 @@
+class SkillsJoinsController < ApplicationController
+end
