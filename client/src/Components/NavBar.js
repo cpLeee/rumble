@@ -54,11 +54,13 @@ function NavBar() {
     style={{ background: '#ffffff' }}
     position="static">
       <Container maxWidth="xl">
+      
         <Toolbar disableGutters>
 {/* Logo */}
           <img 
           className="navbar-logo"
           src="https://cdn-images-1.medium.com/max/800/0*NGplrv1NqneaATAz.png" />
+
  {/* Rumble */}
           <Typography
             variant="h6"
@@ -74,7 +76,9 @@ function NavBar() {
               color: '#000000',
               textDecoration: 'none',
             }}>
-            RUMBLE
+            <img 
+            className="navbar-rumble"
+            src="https://cdn-images-1.medium.com/max/800/1*_WVswRJwL6SMiDEXJuPKsQ.png" />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -84,8 +88,7 @@ function NavBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
-            >
+              color="inherit">
               <MenuIcon />
             </IconButton>
             <Menu
@@ -117,6 +120,7 @@ function NavBar() {
               ))}
             </Menu>
           </Box>
+
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -132,10 +136,11 @@ function NavBar() {
               letterSpacing: '.3rem',
               color: 'black',
               textDecoration: 'none',
-            }}
-          >
-            RUMBLE
+            }}>
           </Typography>
+
+         
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -145,23 +150,28 @@ function NavBar() {
               >
                 {page}
               </Button>
+
+            
             ))}
           </Box>
 
 {/* Login Button */}
         <Box>
+           
             <Button
             variant="contained"
             sx={{color: '#ffffff', backgroundColor: '#fb526b', paddingBottom: '2px', paddingTop: '2px', marginRight: '10px'}}
             className='homepage-second'>Log In</Button>
+           
         </Box>
-
+{/* Avatar  */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Leah Chen" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
+{/* Avatar Menu */}
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
@@ -180,7 +190,8 @@ function NavBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign="center">{setting}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>

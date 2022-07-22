@@ -44,6 +44,12 @@
   width: auto;
 }
 
+.navbar-rumble {
+  height: 30px; 
+  width: auto;
+  padding-bottom: 6px;
+}
+
 /*HOME PAGE*/
 
 .homepage-image {
@@ -61,4 +67,20 @@
   border-radius: 25px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+/* SIGN-UP PAGE */
+
+.signuppage-image {
+  width: 250px;
+  height: auto;
+  padding-top: 10px;
+}
+
+/* LOGIN PAGE  */
+
+.login-image {
+  width: 100px;
+  height: auto;
+  padding-top: 10px
 }
