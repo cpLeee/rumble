@@ -85,3 +85,35 @@
   padding-top: 10px
 }
 
+/* MENTOR CARDS */
+.mentorcard-image {
+  height: 250px;
+  width: auto;
+  padding-left: 22px;
+}
+
+.mentorcard-name {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.mentorcard-profession {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.mentorcard-city {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.mentorcard-background {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+  margin-left: 10px;
+  font-size: small;
+}

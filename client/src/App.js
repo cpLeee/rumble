@@ -26,9 +26,10 @@ function App() {
     })
   }, [])
 
-  const [mentors, setMentors] = useState([]); 
 
-// MENTOR CARDS
+  // MENTOR CARDS
+  const [mentors, setMentors] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:4000/mentors")
       .then((resp) => resp.json())
@@ -38,25 +39,36 @@ function App() {
       });
   }, []);
 
+ 
 
   return (
     <div>
-      <NavBar />
-    
+      <NavBar
+      user={user} setUser={setUser} />
+
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
-          <Route path='/signup' element={<SignUpPage />} />
-          <Route path='/login' element={<LoginPage />} />
-          <Route path='/profile' element={<ProfilePage />} />
+
+          <Route path='/signup' element={<SignUpPage 
+          onSignUp={setUser} />} />
+
+          <Route path='/login' element={<LoginPage onLogin={setUser}/>} />
+          
+          <Route path='/profile' element={<ProfilePage 
+          user={user}/>} />
 
           <Route path='/swipe' element=
           {<SwipePage 
-          mentors={mentors} />} />
+          mentors={mentors}
+          user={user} />} />
 
-          <Route path='/likes' element={<LikesPage />} />
-          <Route path='/map' element={<MapPage />} />
+          <Route path='/likes' element={<LikesPage
+          user={user} />} />
+
+          <Route path='/map' element={<MapPage
+          user={user} />} />
         </Routes>
       </BrowserRouter>
 

@@ -16,4 +16,3 @@ class MentorsController < ApplicationController
     end    
 
 end
-ß

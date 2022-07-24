@@ -31,16 +31,16 @@ function LoginPage({ onLogin }) {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(loginInfo)
         })
-            .then(res => {
+            .then(resp => {
                 setIsLoading(false)
-                if (res.ok) {
-                    res.json().then((user) => onLogin(user))
-                    navigate('/homepage')
+                if (resp.ok) {
+                    resp.json().then((user) => onLogin(user))
+                    navigate('/swipe')
                 } else {
-                    res.json().then((err) => {
+                    resp.json().then((err) => {
                         setErrors(err.errors)
                     })
-                    navigate('/')
+                    // navigate('/')
                 }
             })
     }
@@ -74,12 +74,12 @@ function LoginPage({ onLogin }) {
                 direction="column"
                 justifyContent="center"
                 alignItems="center" 
-                spacing={2}
-                style={{ minHeight: '50vh'}}>
+                spacing={1} >
                 {errors.map((err) => {
                 return <Alert severity="error">{`${err}`}</Alert>
                 })}
                 </Stack>
+
             </form>
         </div>
     )

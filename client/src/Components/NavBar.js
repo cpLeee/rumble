@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -12,30 +13,22 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import { createTheme } from '@mui/material/styles';
+import LogoutIcon from '@mui/icons-material/Logout';
+
 
 
 // const pages = ['Swipe', 'Likes', 'Map', 'About']
 const settings = ['Profile', 'Logout']
 
-const theme = createTheme({
-    palette: {
-      primary: {
-        main: '#ffffff',
-      },
-      secondary: {
-        main: '#ff1744',
-      },
-    },
-  });
+function NavBar({user, setUser}) {
 
-function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -47,6 +40,18 @@ function NavBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  //LOG OUT 
+
+  // const navigate = useNavigate()
+
+  const handleLogOut = () => {
+    fetch('/logout', {
+    method: "DELETE",
+    })
+      setUser(null)
+        // navigate('/')
+    }
 
   return (
     <AppBar 
@@ -121,6 +126,15 @@ function NavBar() {
             className='homepage-second'>Log In</Button>
         </Link>
         </Box>
+
+{/* Log out Button */}
+
+{user ?
+  <Tooltip title="Log Out">
+    <LogoutIcon sx={{color: '#000000'}} onClick={handleLogOut}/>
+  </Tooltip>: null
+}
+
 {/* Avatar  */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

@@ -35,7 +35,7 @@ function SignUpPage({onSignUp}) {
       setIsLoading(false)
       if (resp.ok) {
         resp.json().then((user) => onSignUp(user))
-        navigate('/mentors')
+        navigate('/')
       } else {
         resp.json().then((err) => setErrors(err.errors))  
         navigate('/signup')
@@ -80,8 +80,7 @@ function SignUpPage({onSignUp}) {
             direction="column"
             justifyContent="center"
             alignItems="center" 
-            spacing={2}
-            style={{ minHeight: '50vh'}}>
+            spacing={1}>
             {errors.map((err) => {
             return <Alert severity="error">{`${err}`}</Alert>
             })}
