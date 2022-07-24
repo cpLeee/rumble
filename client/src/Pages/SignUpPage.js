@@ -35,7 +35,7 @@ function SignUpPage({onSignUp}) {
       setIsLoading(false)
       if (resp.ok) {
         resp.json().then((user) => onSignUp(user))
-        navigate('/homepage')
+        navigate('/mentors')
       } else {
         resp.json().then((err) => setErrors(err.errors))  
         navigate('/signup')

@@ -1,5 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+// import Link from '@mui/material/Link';
+// import { Link } from '@mui/material';
 import Stack from '@mui/material/Stack'
 import Button from '@mui/material/Button';
 
@@ -20,18 +22,15 @@ function HomePage() {
         <h2>Switching careers, or looking for guidance
             <br></br>within your field? Meet your next mentor and
             <br></br>let's rumble<br></br>
-    
+          <Link to='signup' underline="none">
             <Button
             variant="contained"
+            underline="none"
             sx={{color: '#ffffff', backgroundColor: '#fb526b', borderRadius: 4, paddingBottom: '2px', paddingTop: '2px', marginTop: '5px'}}
             className='homepage-second'>Sign Up</Button>
-        </h2>
+          </Link>
+       </h2>
     </Stack>
-       
-  
-        
-    
-    
     </div>
   )
 }

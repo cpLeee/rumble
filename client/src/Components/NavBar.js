@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,11 +12,10 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { createTheme } from '@mui/material/styles';
 
 
-const pages = ['Swipe', 'Likes', 'Map', 'About']
+// const pages = ['Swipe', 'Likes', 'Map', 'About']
 const settings = ['Profile', 'Logout']
 
 const theme = createTheme({
@@ -57,9 +56,11 @@ function NavBar() {
       
         <Toolbar disableGutters>
 {/* Logo */}
+        <Link href="http://localhost:4000">
           <img 
           className="navbar-logo"
           src="https://cdn-images-1.medium.com/max/800/0*NGplrv1NqneaATAz.png" />
+      </Link>
 
  {/* Rumble */}
           <Typography
@@ -76,93 +77,49 @@ function NavBar() {
               color: '#000000',
               textDecoration: 'none',
             }}>
+          <Link href="http://localhost:4000" >
             <img 
             className="navbar-rumble"
             src="https://cdn-images-1.medium.com/max/800/1*_WVswRJwL6SMiDEXJuPKsQ.png" />
+          </Link>
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit">
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"
-                  sx={{
-                    color: '#000000',
-                  }}>{page}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+          <Link href= "http://localhost:4000/swipe"
+          underline="none">
+                <Button
+                style={{color: 'black' }}>Swipe</Button>
+          </Link>
 
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'black',
-              textDecoration: 'none',
-            }}>
-          </Typography>
+          <Link href= "http://localhost:4000/likes"
+          underline="none">
+                <Button
+                style={{color: 'black' }}>Likes</Button>
+          </Link>
 
+          <Link href= "http://localhost:4000/map"
+          underline="none">
+                <Button
+                style={{color: 'black' }}>Map</Button>
+          </Link>
+
+          <Link href= "http://localhost:4000/about"
+          underline="none">
+                <Button
+                style={{color: 'black' }}>About</Button>
+          </Link>
          
-
+{/* SPACE BETWEEN LINKS AND LOGIN */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block' }}
-              >
-                {page}
-              </Button>
-
-            
-            ))}
           </Box>
 
 {/* Login Button */}
         <Box>
-           
+        <Link href="http://localhost:4000/login">
             <Button
             variant="contained"
             sx={{color: '#ffffff', backgroundColor: '#fb526b', paddingBottom: '2px', paddingTop: '2px', marginRight: '10px'}}
             className='homepage-second'>Log In</Button>
-           
+        </Link>
         </Box>
 {/* Avatar  */}
           <Box sx={{ flexGrow: 0 }}>

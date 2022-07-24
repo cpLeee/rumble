@@ -47,7 +47,7 @@
 .navbar-rumble {
   height: 30px; 
   width: auto;
-  padding-bottom: 6px;
+  padding-top: 1px;
 }
 
 /*HOME PAGE*/
@@ -84,3 +84,4 @@
   height: auto;
   padding-top: 10px
 }
+

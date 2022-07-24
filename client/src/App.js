@@ -15,15 +15,29 @@ import MapPage from './Pages/MapPage';
 
 function App() {
 
-  // const [user, setUser] = useState(null)
+// USER 
+  const [user, setUser] = useState(null)
 
-  // useEffect(() => {
-  //   fetch('/me').then((resp) => {
-  //     if (resp.ok) {
-  //       resp.json().then((user) => setUser(user))
-  //     }
-  //   })
-  // }, [])
+  useEffect(() => {
+    fetch('/me').then((resp) => {
+      if (resp.ok) {
+        resp.json().then((user) => setUser(user))
+      }
+    })
+  }, [])
+
+  const [mentors, setMentors] = useState([]); 
+
+// MENTOR CARDS
+  useEffect(() => {
+    fetch("http://localhost:4000/mentors")
+      .then((resp) => resp.json())
+      .then((mentorsArray) => {
+        console.log(mentorsArray)
+        setMentors(mentorsArray);
+      });
+  }, []);
+
 
   return (
     <div>
@@ -36,7 +50,11 @@ function App() {
           <Route path='/signup' element={<SignUpPage />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/profile' element={<ProfilePage />} />
-          <Route path='/swipe' element={<SwipePage />} />
+
+          <Route path='/swipe' element=
+          {<SwipePage 
+          mentors={mentors} />} />
+
           <Route path='/likes' element={<LikesPage />} />
           <Route path='/map' element={<MapPage />} />
         </Routes>

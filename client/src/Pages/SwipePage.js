@@ -1,8 +1,13 @@
 import React from 'react'
+import MentorList from '../Components/MentorList'
 
-function SwipePage() {
+
+function SwipePage({mentors}) {
   return (
-    <div>SwipePage</div>
+    <div>
+      <MentorList 
+      mentors= {mentors}/>
+    </div>
   )
 }
 
