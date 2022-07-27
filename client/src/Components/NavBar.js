@@ -107,11 +107,19 @@ function NavBar({user, setUser}) {
                 style={{color: 'black' }}>Map</Button>
           </Link>
 
+          <Link href= "http://localhost:4000/chat"
+          underline="none">
+                <Button
+                style={{color: 'black' }}>Chat</Button>
+          </Link>
+
           <Link href= "http://localhost:4000/about"
           underline="none">
                 <Button
                 style={{color: 'black' }}>About</Button>
           </Link>
+
+        
          
 {/* SPACE BETWEEN LINKS AND LOGIN */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>

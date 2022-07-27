@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import MentorCard from './MentorCard'
 
+
 function MentorList({mentors}) {
   const [current, setCurrent]= useState(0)
   const length= mentors.length; 
@@ -13,12 +14,9 @@ function MentorList({mentors}) {
     setCurrent(current === 0 ? length -1 : current - 1)
   }
 
-
   if (!Array.isArray(mentors) || mentors.length <=0) {
     return null;
   }
-
-
   return (
     <section className="slider">
 

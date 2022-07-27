@@ -86,6 +86,17 @@
 }
 
 /* MENTOR PAGE */
+
+.swipepage {
+  background-image: url("https://cdn-images-1.medium.com/max/800/1*tL0PuJwhMH9BrENjpLX9hg.png");
+  background-size: cover;
+}
+
+.swipepage-match {
+  width: 500px;
+  height: auto;
+}
+
 .slider {
   display: flex;
   align-items: center;
@@ -93,7 +104,6 @@
   position: relative;
   height: 100vh;
 }
-
 
 /* MENTOR CARDS */
 
@@ -111,8 +121,9 @@
 
 .mentorcard-image {
   height: 250px;
-  width: auto;
+  width: 250px;
   padding-left: 22px;
+  padding-top: 15px;
 }
 
 .mentorcard-name {
@@ -139,4 +150,27 @@
   margin-top: -15px;
   margin-left: 10px;
   font-size: small;
+}
+
+.mentorcard-likes {
+  height: 20px;
+  width: auto;
+}
+
+/* ABOUT PAGE  */
+.about-page {
+  background-image: url("https://cdn-images-1.medium.com/max/800/1*tL0PuJwhMH9BrENjpLX9hg.png");
+  background-size: cover;
+  height: 600px;
+}
+
+.aboutpage-rumble {
+  width: 520px;
+  height: auto;
+}
+
+.aboutpage-image {
+  width: 500px;
+  height: auto;
+  padding-right: 15px;
 }

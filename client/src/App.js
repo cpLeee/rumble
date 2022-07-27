@@ -36,11 +36,34 @@ function App() {
       .then((mentorsArray) => {
         console.log(mentorsArray)
         setMentors(mentorsArray);
+        setFavoritesList(mentorsArray.filter(mentor => mentor.favorites === true))
       });
   }, []);
 
- 
+  // FAVORITES 
 
+  const [favoritesList, setFavoritesList]= useState([]) 
+
+	const updateFaves = (id, value) => {
+		fetch("http://localhost:4000/mentors" + `/${id}`, {
+			method: 'PATCH',
+			headers: { "Content-Type": "application/json", },
+			body: JSON.stringify({ "favorites": !value })
+		})
+			.then(resp => resp.json())
+			.then((obj) => {
+				const filterMentors = mentors.filter(mentor => mentor.id !== id)
+				const newMentors = [...filterMentors, obj]
+				setFavoritesList(newMentors.filter(mentor => mentor.favorites === true))
+				setMentors(newMentors)
+			})
+	}
+
+  const sortFaveMentors = favoritesList.filter(
+		mentor => mentor.name.toLowerCase())
+	
+
+ 
   return (
     <div>
       <NavBar
@@ -65,7 +88,9 @@ function App() {
           user={user} />} />
 
           <Route path='/likes' element={<LikesPage
-          user={user} />} />
+          user={user}
+          favoritesList={sortFaveMentors}
+          updateFaves={updateFaves} />} />
 
           <Route path='/map' element={<MapPage
           user={user} />} />
