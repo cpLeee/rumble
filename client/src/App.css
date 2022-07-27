@@ -85,7 +85,30 @@
   padding-top: 10px
 }
 
+/* MENTOR PAGE */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+}
+
+
 /* MENTOR CARDS */
+
+.mentorcard-left-arrow {
+  height: 53px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.mentorcard-right-arrow {
+  height: 53px;
+  width: auto;
+  margin-left: 10px;
+}
+
 .mentorcard-image {
   height: 250px;
   width: auto;
