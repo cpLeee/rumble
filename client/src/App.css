@@ -157,6 +157,12 @@
   width: auto;
 }
 
+/* LIKES PAGE */
+
+.likespage-body {
+  margin-top: 60px;
+}
+
 /* ABOUT PAGE  */
 .about-page {
   background-image: url("https://cdn-images-1.medium.com/max/800/1*tL0PuJwhMH9BrENjpLX9hg.png");
@@ -174,3 +180,19 @@
   height: auto;
   padding-right: 15px;
 }
+
+/*MAP BOX*/
+
+.mapbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.mapbox-quote {
+  margin-top: 10px;
+  width: 200px;
+  height: auto;
+}
+

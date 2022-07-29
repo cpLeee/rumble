@@ -12,11 +12,11 @@ function MentorCard({mentor}) {
 
     const heartFull= "https://cdn-images-1.medium.com/max/1600/1*zXDqSZfNO4gS9qjT9wyyNg.png"
 
-    const [heart, setHeart] = useState();
+    const [isHeart, setIsHeart] = useState(favorites)
 
     const handleLike = () => {
-      updateFaves(id, heart)
-      setHeart(!heart)
+      updateFaves(id, isHeart)
+      setIsHeart(!isHeart)
     }
 
 
@@ -51,8 +51,8 @@ alignItems="center" >
             <img
 								onClick={handleLike}
 								className='mentorcard-likes'
-								src={heart ? heartFull : heartOutline}
-							/>
+								src={isHeart ? heartFull : heartOutline}
+						/>
 
             
 </Stack>

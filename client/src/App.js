@@ -51,9 +51,9 @@ function App() {
 			body: JSON.stringify({ "favorites": !value })
 		})
 			.then(resp => resp.json())
-			.then((obj) => {
+			.then((arr) => {
 				const filterMentors = mentors.filter(mentor => mentor.id !== id)
-				const newMentors = [...filterMentors, obj]
+				const newMentors = [...filterMentors, arr]
 				setFavoritesList(newMentors.filter(mentor => mentor.favorites === true))
 				setMentors(newMentors)
 			})
@@ -93,7 +93,8 @@ function App() {
           updateFaves={updateFaves} />} />
 
           <Route path='/map' element={<MapPage
-          user={user} />} />
+          user={user}
+          mentors= {mentors} />} />
         </Routes>
       </BrowserRouter>
 
