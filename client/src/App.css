@@ -196,3 +196,48 @@
   height: auto;
 }
 
+.mapbox-button {
+  height: 30px;
+  width: auto;
+}
+
+/* PROFILE PAGE */
+
+.profilepage-form {
+  justify-content: center;
+  align-items: center;
+}
+
+.profilepage-image {
+  margin-top: 50px;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profilepage-background {
+  border: 1px solid black;
+  height: 65px;
+  width: 500px;
+}
+
+.profilepage-edit-btn {
+  background-color: white;
+  border: white;
+  height: 17px;
+  width: auto;
+  padding-top: 10.5px;
+}
+
+.profilepage-name {
+  border: white;
+  width: 100px;
+}
+
+.profilepage-profession {
+  border: white; 
+}
+
+.profilepage-city{
+  border: white; 
+}

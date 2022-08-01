@@ -80,7 +80,7 @@ function App() {
           <Route path='/login' element={<LoginPage onLogin={setUser}/>} />
           
           <Route path='/profile' element={<ProfilePage 
-          user={user}/>} />
+          user={user} />} />
 
           <Route path='/swipe' element=
           {<SwipePage 

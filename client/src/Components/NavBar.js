@@ -113,6 +113,12 @@ function NavBar({user, setUser}) {
                 style={{color: 'black' }}>Chat</Button>
           </Link>
 
+          <Link href= "http://localhost:4000/profile"
+          underline="none">
+                <Button
+                style={{color: 'black' }}>Profile</Button>
+          </Link>
+
           <Link href= "http://localhost:4000/about"
           underline="none">
                 <Button
@@ -143,39 +149,6 @@ function NavBar({user, setUser}) {
   </Tooltip>: null
 }
 
-{/* Avatar  */}
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Leah Chen" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-{/* Avatar Menu */}
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-            
-          </Box>
         </Toolbar>
       </Container>
     </AppBar>
