@@ -241,3 +241,9 @@
 .profilepage-city{
   border: white; 
 }
+
+.edit-btn {
+  height: 17px;
+  width: auto;
+  padding-left: 8px;
+}
