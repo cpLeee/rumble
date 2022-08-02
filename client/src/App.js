@@ -62,8 +62,9 @@ function App() {
   const sortFaveMentors = favoritesList.filter(
 		mentor => mentor.name.toLowerCase())
 	
+//EDIT PROFILE PAGE 
 
- 
+
   return (
     <div>
       <NavBar

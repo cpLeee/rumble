@@ -247,3 +247,9 @@
   width: auto;
   padding-left: 8px;
 }
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
