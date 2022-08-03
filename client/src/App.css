@@ -158,10 +158,17 @@
 }
 
 /* LIKES PAGE */
+
+.likespage{
+  margin-top: 10px;
+  background-image: url("https://cdn-images-1.medium.com/max/800/1*9YIE2VW_KnDolIzbEh8YqA.png");
+  background-size: cover;
+
+}
 .likespage-mentorsign {
   width: 220px;
   height: auto; 
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .likespage-body {
@@ -173,11 +180,12 @@
   border: 1px solid black;
   display: flex;
   overflow-x: auto;
-  margin-top: 10px;
+  margin-top: 5px;
   border: 1.5px solid #fb526b;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
+  background-color: white;
 
 }
 

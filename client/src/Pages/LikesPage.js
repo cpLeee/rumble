@@ -18,6 +18,7 @@ function LikesPage({ updateFaves, favoritesList }) {
 	})
 
 	return (
+		<body className="likespage">
 		<div>
 			
 			<img
@@ -41,6 +42,7 @@ function LikesPage({ updateFaves, favoritesList }) {
 				</div>
 		
 			</div>
+			</body>
 	)
 }
 
