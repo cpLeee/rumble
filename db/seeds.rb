@@ -50,7 +50,7 @@ Mentor.create(name: "Ashley Chen", background: "UX/UI Designer with a background
 
 Mentor.create(name: "Annemarie Lucernoni", background: "Software Engineer with a background in executive recruiting. Cyling professional and beer enthusiast!", profession: "Software Engineer", city: "Seattle", profile_url: "https://ca.slack-edge.com/T02MD9XTF-U0397UDEEC8-0536e9a15278-512", longitude: -122.34259337269563, latitude: 47.610265905896625, favorites: false)
 
-Mentor.create(name: "Andy Situ", background: "Data wizard with a background in finance and marketing.", profession: "Data Scientist", city: "San Francisco", profile_url: "https://cdn-images-1.medium.com/max/1600/1*lErN87mjHIslIpwrBlErhg.png", longitude: -122.45110115767098, latitude: 37.72614824068031, favorites: true)
+Mentor.create(name: "Andy Situ", background: "Data wizard with a background in finance and marketing.", profession: "Data Scientist", city: "San Francisco", profile_url: "https://cdn-images-1.medium.com/max/1600/1*lErN87mjHIslIpwrBlErhg.png", longitude: -122.45110115767098, latitude: 37.72614824068031, favorites: false)
 
 Mentor.create(name: "Cristina Diaz", background: "Software Engineer with a background in Chemistry! Professional green thumb and momma to Paco.", profession: "Software Engineer", city: "Los Angeles", profile_url: "https://ca.slack-edge.com/T02MD9XTF-U0394GNGC5U-811a6ed48f91-512", longitude: -118.29777676117448, latitude:  34.139590788518305, favorites: false)
 
@@ -74,11 +74,11 @@ Mentor.create(name: "Issac Lewkow", background: "Software Engineer and professio
 
 Mentor.create(name: "Daniel Chan", background: "Software Engineer with a background in environmental consulting. Love to travel!", profession: "Web3 Developer", city: "San Francisco", profile_url: "https://ca.slack-edge.com/T02MD9XTF-U037H4AMR19-b6de91d23eff-512", longitude: -122.3878130725689, latitude: 37.76864098716103, favorites: false)
 
-Mentor.create(name: "Levana Lee", background: "Product Manager with a background in operations and marketing.", profession: "Product Manager", city: "Los Angeles", profile_url: "https://cdn-images-1.medium.com/max/1600/1*Rh4vzkfQVxCtB_FXVkupDQ.png", longitude: -118.44219805945474, longitude: 34.071817622314484, favorites: false
+Mentor.create(name: "Levana Lee", background: "Product Manager with a background in operations and marketing.", profession: "Product Manager", city: "Los Angeles", profile_url: "https://cdn-images-1.medium.com/max/1600/1*Rh4vzkfQVxCtB_FXVkupDQ.png", longitude: -118.44219805945474, longitude: 34.071817622314484, favorites: true)
 
 Mentor.create(name: "Jenna Hrdlicka", background: "Software Engineer and professional sommelier with a background in journalism. Transitioned from writing articles to writing code!", profession: "Software Engineer", city: "Seattle", profile_url: "https://ca.slack-edge.com/T02MD9XTF-U037MMZVCD6-527b2bd79a4b-512", longitude: -122.30369555171198, latitude: 47.65529769710265, favorites: false)
 
-Mentor.create(name: "Paige Mcgee", background: "Nurse Manager turned Product Designer helping patients and healthcare centers through empathy and action-oriented rapid prototyping of solutions.", profession: "Product Designer", city: "Chicago", profile_url: "https://media-exp1.licdn.com/dms/image/C5603AQF_TGMUQ26bfA/profile-displayphoto-shrink_200_200/0/1617148102351?e=1664409600&v=beta&t=_m3HlDpgZqO7dm1qWrbc8Y-4ndTtzaTc6I-446DJc7w", longitude: -122.42971737219314, latitude:  37.78554037443692,  favorites: true)
+Mentor.create(name: "Paige Mcgee", background: "Nurse Manager turned Product Designer helping patients and clients through empathy.", profession: "Product Designer", city: "Chicago", profile_url: "https://media-exp1.licdn.com/dms/image/C5603AQF_TGMUQ26bfA/profile-displayphoto-shrink_200_200/0/1617148102351?e=1664409600&v=beta&t=_m3HlDpgZqO7dm1qWrbc8Y-4ndTtzaTc6I-446DJc7w", longitude: -122.42971737219314, latitude:  37.78554037443692,  favorites: true)
 
 Mentor.create(name: "Kevin Nielsen", background: "Software Engineer, professional athlete and life coach.", profession: "Software Engineer", city: "Fillmore", profile_url: "https://ca.slack-edge.com/T02MD9XTF-U03AFKL6GE9-f29e5ed41800-512", longitude: -118.90966527072803, latitude: 34.400940853065634, favorites: false)
 

@@ -325,3 +325,38 @@ For additional support, check out these guides on Heroku:
 [postgres downloads page]: https://postgresapp.com/downloads.html
 [heroku rails deploying guide]: https://devcenter.heroku.com/articles/getting-started-with-rails6
 [troubleshooting guide on heroku]: https://devcenter.heroku.com/articles/getting-started-with-rails6#troubleshooting
+
+# Rumble
+
+Rumble: An app built on Reactjs and Ruby on Rails by Leah Chen. 
+Rumble Live: Tentative 
+Github Repo: https://github.com/cpLeee/rumble.git
+## Project Description
+
+This full-stack project allows those who are switching careers to seek guidance from mentors who have a similar background or the same career goal as mentees. Through this platform, I aim to create a community of skill sharing and networking- to allow those who are lost to gain guidance. 
+
+## What's Rumble? 
+
+Rumble is a networking application that allows for the sharing of knowledge and connection building based off of profession and skills. 
+
+## Functionality and Features 
+
+My application facilitates a connection between mentor and mentee. This is accomplished through the following features: 
+
+- Users(mentee) is able to sign up for a password-protected account that gives them access to the different mentors that are on the platform. 
+- Once logged in, users are able to view, match and favorite mentors who have similar backgrounds and professions. 
+- Users are able to edit their profile changing their city, profession and background. 
+- Users can view their favorited mentors on their likes page. 
+- Users can view on a map where the different mentors are located through Mapbox. 
+
+## Screenshots 
+# Landing Page 
+# Sign Up Page 
+# Login Page 
+# Swipe Page 
+# Likes Page 
+# Map Page 
+# Profile Page 
+
+## Tech Stack 
+
