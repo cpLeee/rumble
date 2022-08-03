@@ -26,11 +26,10 @@ function EditDetails({ editUser, handleUpdate }) {
 
     // const [current, setCurrent]= useState(0)
 
-    // const [updatedUser, setUpdatedUser] = useState(name, city, professn, background);io
-    const [name, setName] = useState("")
-    const [profession, setProfession] = useState("")
-    const [city, setCity] = useState("")
-    const [background, setBackground]= useState("")
+    const [name, setName] = useState(editUser.name)
+    const [profession, setProfession] = useState(editUser.profession)
+    const [city, setCity] = useState(editUser.city)
+    const [background, setBackground]= useState(editUser.background)
 
     
     function handleUserSubmit(e) {
@@ -55,9 +54,10 @@ function EditDetails({ editUser, handleUpdate }) {
             <Button variant="outlined"
                 sx={{
                     paddingBottom: '2px',
-                    paddingTop: '2px', borderColor: '#fb526b', color: '#fb526b'
+                    marginTop: '10px',
+                    paddingTop: '2px', borderColor: '#fb526b', color: '#fb526b', marginRight: '4px'
                 }}
-                onClick={handleClickOpen}> Edit Me
+                onClick={handleClickOpen}> Edit My Information
                 <img
                     className="edit-btn" src="https://cdn-images-1.medium.com/max/800/1*qM0PL1osixzpHZCCGOStwg.png" />
             </Button>

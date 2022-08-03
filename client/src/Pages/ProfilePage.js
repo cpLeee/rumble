@@ -35,12 +35,24 @@ function ProfilePage({user}) {
   });
 
   return (
-    <div>
-  
+    <body className="profilepage">
+   
+      <Stack
+        className="profilepage-stack"
+        direction="column"
+        alignItems="center" 
+        spacing={1}
+        style={{ minHeight:'89vh'}}
+      >
+      <img 
+      className= "profilepage-myaccount"
+      src="https://cdn-images-1.medium.com/max/800/1*c4xYK6qI36SWyXwvhNjtYA.png" />
       <UserProfile
       users= {displayedUsers}
       onUpdateUser= {handleUpdateUser}/>
-    </div>
+      </Stack>
+   
+    </body>
   )
 }
 

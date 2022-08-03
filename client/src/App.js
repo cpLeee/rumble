@@ -34,7 +34,6 @@ function App() {
     fetch("http://localhost:4000/mentors")
       .then((resp) => resp.json())
       .then((mentorsArray) => {
-        console.log(mentorsArray)
         setMentors(mentorsArray);
         setFavoritesList(mentorsArray.filter(mentor => mentor.favorites === true))
       });
@@ -95,7 +94,7 @@ function App() {
 
           <Route path='/map' element={<MapPage
           user={user}
-          mentors= {mentors} />} />
+          mentorsArray= {mentors} />} />
         </Routes>
       </BrowserRouter>
 

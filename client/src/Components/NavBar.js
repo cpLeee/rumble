@@ -148,7 +148,6 @@ function NavBar({user, setUser}) {
     <LogoutIcon sx={{color: '#fb526b', marginRight: '5px'}} onClick={handleLogOut}/>
   </Tooltip>: null
 }
-
         </Toolbar>
       </Container>
     </AppBar>

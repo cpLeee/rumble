@@ -1,13 +1,13 @@
 import React , {useState} from 'react'
 import Mapbox from '../Components/Mapbox';
 
-function MapPage({mentors}) {
-  const {id, name, background, profession, city, profile_url, longitude, latitude} = mentors;
+function MapPage({mentorsArray}) {
+  // const {id, name, background, profession, city, profile_url, longitude, latitude} = mentors;
   
     return (
       <div>
         <Mapbox
-          mentors= {mentors} />
+          mentorsArray= {mentorsArray} />
      </div>
     );
   }

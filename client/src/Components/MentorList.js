@@ -6,6 +6,7 @@ function MentorList({mentors}) {
   const [current, setCurrent]= useState(0)
   const length= mentors.length; 
 
+
   const nextImage= () => {
     setCurrent(current === length -1 ? 0 : current + 1)
   }
