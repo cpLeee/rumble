@@ -23,7 +23,7 @@ My application facilitates a connection between mentor and mentee. This is accom
 
 ## Screenshots 
 ### Landing Page 
-![alt text](screenshots/LandingPage.png "Landing Page)
+![alt tag](https://cdn-images-1.medium.com/max/1600/1*remo8XMGNKNbWk2Jt7tHvg.png "Landing Page")
 ### Sign Up Page 
 
 ### Login Page 
@@ -34,9 +34,16 @@ My application facilitates a connection between mentor and mentee. This is accom
 
 ### Map Page 
 
-# Profile Page 
+### Profile Page 
 
 ## Tech Stack 
+- JavaScript 
+- Reactjs 
+- Ruby on Rails
+- Postgresql
+- MapBox
+- HTML/ Custom CSS
+- Material UI
 
 ## Requirements
 
