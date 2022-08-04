@@ -37,7 +37,7 @@ My application facilitates a connection between mentor and mentee. This is accom
 ### Map Page 
 ![alt tag](https://cdn-images-1.medium.com/max/1600/0*7mCmk8ZUczfRcYW1.gif "Map Page")
 ### Profile Page 
-![alt tag](https://cdn-images-1.medium.com/max/1600/0*m-la8odDhTwLmwQI.gif "Profile Page")
+![alt tag](https://cdn-images-1.medium.com/max/1600/0*JNvu078EyNxHgNDW.gif "Profile Page")
 ## Tech Stack 
 - JavaScript 
 - Reactjs 
