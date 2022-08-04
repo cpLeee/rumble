@@ -14,6 +14,11 @@ class UsersController < ApplicationController
          render json: { errors: "No active session" }, status: :unauthorized
         end
     end
+
+    def update 
+        @user.update!(user_params)
+        render json: @user, status: :accepted
+    end
     
     # POST '/signup'
     def create
@@ -26,6 +31,14 @@ class UsersController < ApplicationController
     
     def user_params
         params.permit(:username, :password, :password_confirmation, :location)
+    end
+
+    def find_user
+        @user= User.find_by(id:params[:id])
+    end
+
+    def user_params
+        params.permit(:name, :city, :profession, :background)
     end
 
 end

@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 2022_07_21_033040) do
     t.string "profession"
     t.string "city"
     t.string "profile_url"
-    t.decimal "longitude"
-    t.decimal "latitude"
+    t.float "longitude"
+    t.float "latitude"
     t.boolean "favorites"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -5,6 +5,7 @@ import ReactMapGL, { Marker } from 'react-map-gl';
 
 
 function Mapbox({ mentorsArray }) {
+    // console.log(mentorsArray[1].latitude)
 
     let [viewport, setViewport] = useState({
         latitude: 37.75464109812357,
@@ -28,14 +29,12 @@ function Mapbox({ mentorsArray }) {
                     setViewport(viewport);
                 }}
             >
-
                 {mentorsArray.map((mentor) => {
-
                     <div>
                         <Marker
-                            key={mentor.id}
-                            longitude={parseFloat(mentor.longitude)}
-                            latitude={parseFloat(mentor.latitude)}
+                            key= {mentor.id}
+                            latitude= {mentor.latitude}
+                            longitude= {mentor.longitude}
                         >
                             <button>
                                 <img
@@ -45,9 +44,7 @@ function Mapbox({ mentorsArray }) {
 
                         </Marker>
                     </div>
-
                 })}
-
             </ReactMapGL>
         </div>
 

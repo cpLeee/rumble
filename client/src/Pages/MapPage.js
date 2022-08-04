@@ -5,6 +5,7 @@ function MapPage({mentorsArray}) {
   // const {id, name, background, profession, city, profile_url, longitude, latitude} = mentors;
   
     return (
+      
       <div>
         <Mapbox
           mentorsArray= {mentorsArray} />

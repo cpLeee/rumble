@@ -11,6 +11,7 @@ import ProfilePage from './Pages/ProfilePage';
 import SwipePage from './Pages/SwipePage';
 import LikesPage from './Pages/LikesPage';
 import MapPage from './Pages/MapPage';
+import ChatPage from './Pages/ChatPage';
 
 
 function App() {
@@ -93,6 +94,10 @@ function App() {
           updateFaves={updateFaves} />} />
 
           <Route path='/map' element={<MapPage
+          user={user}
+          mentorsArray= {mentors} />} />
+
+        <Route path='/chat' element={<ChatPage
           user={user}
           mentorsArray= {mentors} />} />
         </Routes>

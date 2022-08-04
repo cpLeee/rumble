@@ -267,3 +267,62 @@
   align-items: center;
   justify-content: center;
 }
+
+
+/*CHAT PAGE*/ 
+.chatpage {
+  background-image: url("https://cdn-images-1.medium.com/max/800/1*tL0PuJwhMH9BrENjpLX9hg.png");
+  background-size: cover;
+  margin-top: -8px;
+  height: 555px;
+
+}
+
+.map-container {
+  margin-top: 10px;
+  text-align: center; 
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.chatpage-profile-image {
+  margin-top: 15px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: -15px;
+}
+
+.chatpage-profile-name {
+  margin-bottom: -5px;
+}
+
+.chatpage-profile-city {
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.chatpage-profile-profession {
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.second-mapbox-quote {
+  width: 500px;
+  margin-top: -15px;
+  margin-bottom: -40px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 70vh;
+}
