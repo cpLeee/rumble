@@ -51,7 +51,6 @@ My application facilitates a connection between mentor and mentee. This is accom
 
 - Ruby 2.7.4
 - NodeJS (v16), and npm
-- Heroku CLI
 - Postgresql
 
 See Environment Setup below for instructions on installing these tools if you
