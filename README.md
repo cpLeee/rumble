@@ -24,18 +24,20 @@ My application facilitates a connection between mentor and mentee. This is accom
 ## Screenshots 
 ### Landing Page 
 ![alt tag](https://cdn-images-1.medium.com/max/1600/1*remo8XMGNKNbWk2Jt7tHvg.png "Landing Page")
+### About Page
+![alt tag](https://cdn-images-1.medium.com/max/1600/1*LAUt8Cb57Q-rnXLXv5O1Kw.png "About Page")
 ### Sign Up Page 
-
+![alt tag](https://cdn-images-1.medium.com/max/1600/1*MrOJ86lanObhaumiq5JIOg.png "Sign Up Page")
 ### Login Page 
-
+![alt tag](https://cdn-images-1.medium.com/max/1600/1*V5bTG1yPOs7PV_lJjtLi1A.png "Login Page")
 ### Swipe Page 
-
+![alt tag](https://cdn-images-1.medium.com/max/1600/0*s9Z9GOd53D_Qnx7L.gif "Swipe Page")
 ### Likes Page 
-
+![alt tag](https://cdn-images-1.medium.com/max/1600/0*p_8yr4ODpO2Lq6O5.gif "Likes Page")
 ### Map Page 
-
+![alt tag](https://cdn-images-1.medium.com/max/1600/0*7mCmk8ZUczfRcYW1.gif "Map Page")
 ### Profile Page 
-
+![alt tag](https://cdn-images-1.medium.com/max/1600/0*m-la8odDhTwLmwQI.gif "Profile Page")
 ## Tech Stack 
 - JavaScript 
 - Reactjs 
