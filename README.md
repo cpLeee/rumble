@@ -4,9 +4,9 @@ Rumble is a networking application that allows for the sharing of knowledge and 
 
 ## Rumble
 
-Rumble: An app built on Reactjs and Ruby on Rails by Leah Chen. 
-Rumble Live: Tentative 
-Github Repo: https://github.com/cpLeee/rumble.git
+- Rumble: An app built on Reactjs and Ruby on Rails by Leah Chen. 
+- Rumble Live: Tentative 
+- Github Repo: https://github.com/cpLeee/rumble.git
 ## Project Description
 
 This full-stack project allows those who are switching careers to seek guidance from mentors who have a similar background or the same career goal as mentees. Through this platform, I aim to create a community of skill sharing and networking- to allow those who are lost to gain guidance. 
